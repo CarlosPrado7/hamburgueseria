@@ -1,0 +1,118 @@
+.footer {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    flex: 1;
+  }
+  
+  .logo-img {
+    max-width: 120px;
+  }
+  
+  .footer-contact {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .footer-contact .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .footer-contact .contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .instagram {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .instagram a {
+    margin: 0 10px; 
+  }
+  
+  .instagram-icon,
+  .facebook-icon,
+  .tik-tok-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .instagram-icon:hover,
+  .facebook-icon:hover,
+  .tik-tok-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2); 
+  }
+  
+  .footer-policy {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footer-policy ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-policy li {
+    margin: 8px 0;
+  }
+  
+  .footer-policy a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-policy a:hover {
+    color: #b51739; 
+    text-decoration: underline;
+  }
+  
+  /* Efectos responsivos */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  
+    .footer-contact {
+      margin-bottom: 20px;
+    }
+  
+    .footer-policy {
+      text-align: center;
+    }
+  
+    .instagram a {
+      margin: 5px; /* Ajusta el espaciado entre íconos en pantallas pequeñas */
+    }
+  }
+  

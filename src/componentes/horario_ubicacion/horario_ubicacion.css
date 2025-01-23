@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+.fondo {
+
+    background-image: url(/assets/fondo.png);
+
+}
+
+.principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    animation: bounceIn 1.2s ease-out;
+    margin-top: 10px;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.horario {
+    border: 2px solid #e63946;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px auto;
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horario:hover {
+    transform: translateY(-5px);
+}
+
+.horario h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.horario p {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mapa {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #e63946;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+}
+
+.mapa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 28px;
+    }
+
+    .horario h2 {
+        font-size: 22px;
+    }
+
+    .horario p {
+        font-size: 18px;
+    }
+}
