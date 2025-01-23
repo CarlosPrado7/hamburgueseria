@@ -1,5 +1,4 @@
 import './index.css';
-import { Analytics } from '@vercel/analytics/next';
 import { StrictMode } from 'react';
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -26,7 +25,6 @@ const Preloader: React.FC = () => {
 const Home: React.FC = () => {
   return (
     <>
-      <Analytics />
       <Header />
       <Carta />
       <Menu />

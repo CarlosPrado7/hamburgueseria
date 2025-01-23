@@ -62,6 +62,7 @@ npm install react-scroll
 npm install --save-dev @types/react-scroll
 npm install react-intersection-observer
 npm i @vercel/analytics
+npm uninstall @vercel/analytics
 
 # Funcionalidades 
 - [] General
