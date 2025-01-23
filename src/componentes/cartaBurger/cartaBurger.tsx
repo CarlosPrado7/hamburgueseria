@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './cartaBurger.css';
 
 export default function CartaBurger() {
@@ -37,6 +38,7 @@ export default function CartaBurger() {
           <p className="precio">Precio: 6,99€ Menú: 9,49€</p>
         </div>
         <div className="hamburguesa">
+          <img src="/assets/BurgerDoble.jpg" alt="S+ Basic" />
           <h2 className="nombre">S+ Doble</h2>
           <p className="descripcion">Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, doble smash burger, dos lonchas de queso americano, salsa S+ casera</p>
           <p className="precio">Precio: 8,99€ Menú: 11,49€</p>
@@ -52,6 +54,7 @@ export default function CartaBurger() {
           <p className="precio">Precio: 10,99€ Menú: 13,49€</p>
         </div>
         <div className="hamburguesa">
+          <img src="/assets/burger pollo.jpg" alt="S+ Chicken" />
           <h2 className="nombre">S+ Chicken</h2>
           <p className="descripcion">Pan de patata bañado en mantequilla y tostado, contramuslo de pollo crujiente, pepinillo, cebolla agridulce, salsa S+ casera</p>
           <p className="precio">Precio: 9,99€ Menú: 12,49€</p>
@@ -107,34 +110,36 @@ export default function CartaBurger() {
         </div>
 
         {/* Refrescos */ }
-
-        <div className="refrescos">
+        <div className="refrescos-container">
+        <h1 className="refrescos-title">Refrescos y Bebidas</h1>
+        <div className="refrescos-grid">
           <div className="refresco">
             <h2 className="nombre">Agua</h2>
-            <p className="precio">Precio: 1,50€</p>
+            <p className="precio">1,50€</p>
           </div>
           <div className="refresco">
             <h2 className="nombre">Refresco</h2>
-            <p className="precio">Precio: 2,50€</p>
+            <p className="precio">2,50€</p>
           </div>
           <div className="refresco">
             <h2 className="nombre">Copa de barril</h2>
-            <p className="precio">Precio: 2,50€</p>
+            <p className="precio">2,50€</p>
           </div>
           <div className="refresco">
             <h2 className="nombre">Café</h2>
-            <p className="precio">Precio: 1,40€</p>
+            <p className="precio">1,40€</p>
           </div>
           <div className="refresco">
             <h2 className="nombre">Tercio Botellín</h2>
-            <p className="precio">Precio: 2,40€</p>
+            <p className="precio">2,40€</p>
           </div>
           <div className="refresco">
             <h2 className="nombre">Jarra de medio</h2>
-            <p className="precio">Precio: 3,50€</p>
+            <p className="precio">3,50€</p>
           </div>
         </div>
       </div>
+    </div>
 
       {/* Información adicional */}
       <div className="tituloInformativo">
@@ -160,6 +165,10 @@ export default function CartaBurger() {
           <p className="descripcion">Pan slicer bañado en mantequilla y tostado con nutella y crujiente de galleta</p>
           <p className="precio">Precio: 3,50€</p>
         </div>
+      </div>
+
+      <div className='contenedorVolver'>
+        <Link to="/" className='volver'>Volver al inicio</Link>
       </div>
 
     </div>

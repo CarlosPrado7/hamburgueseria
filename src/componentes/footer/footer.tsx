@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-contact">
           <div className="contact-item">
             <img src="/assets/telefono.png" alt="Telefono" className="contact-icon" />
-            <a href="tel: 638046761">+638 046 761</a>
+            <a href="tel: 629367021">+629 36 70 21</a>
           </div>
           <div className="contact-item">
             <img src="/assets/email.png" alt="Correo" className="contact-icon" />

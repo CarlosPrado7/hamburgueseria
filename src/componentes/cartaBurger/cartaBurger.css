@@ -1,107 +1,238 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-cartaBurger {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #111;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.hamburguesas-title, .entrantes-title, .postes-title {
+  font-size: 2.5rem;
+  color: #b51739;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid #b51739;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0.5rem 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Grid Containers */
+.hamburguesas, .entrantes, .postres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hamburguesa, .entrante, .postre {
+  background: #222;
+  border: 2px solid #b51739;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.hamburguesa:hover, .entrante:hover, .postre:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(181, 23, 57, 0.8);
+}
+
+.hamburguesa img, .entrante img, .postre img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.nombre {
+  font-weight: bold;
+  color: #b51739;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.precio {
+  font-size: 1.2rem;
+  color: #b51739;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.alergenos-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #111;
+  border: 2px solid #b51739;
+  border-radius: 8px;
+}
+
+.alergeno {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #b51739;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tituloInformativo {
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Refrescos */
+.refrescos-container {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.refrescos-title {
+  font-size: 2.5rem;
+  color: #b51739;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #b51739;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.refrescos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.refresco {
+  background: #222;
+  color: #fff;
+  border: 2px solid #b51739;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.refresco:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(181, 23, 57, 0.8);
+}
+
+.nombre {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #b51739;
+}
+
+.precio {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+.contenedorVolver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20p;
+}
+
+.volver {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff; 
+  background-color: #b51739; 
+  border: 2px solid #b51739;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.volver:hover {
+  background-color: #ffffff; 
+  color: #b51739; 
+  border-color: #b51739;
+  transform: scale(1.05); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.volver:active {
+  transform: scale(0.95);
+}
+
+
+@media (max-width: 768px) {
+  .hamburguesas, .entrantes, .postres, .refrescos {
+    grid-template-columns: 1fr;
   }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000;
-    color: #fff;
+
+  .hamburguesas-title, .entrantes-title, .postes-title {
+    font-size: 2rem;
   }
-  
-  .menu-cartaBurger {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .menu-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #b51739;
-    margin-bottom: 30px;
-  }
-  
-  .menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .menu-card {
-    background-color: #111;
-    border: 2px solid #b51739;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .menu-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(181, 23, 57, 0.7);
-  }
-  
-  .menu-card-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .menu-card-content {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-  
-  .menu-card-title {
+
+  h2 {
     font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 10px;
   }
-  
-  .menu-card-description {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin-bottom: 15px;
-  }
-  
-  .menu-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-  }
-  
-  .menu-card-price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #b51739;
-  }
-  
-  .menu-card-tags {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .tag {
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 20px;
-    color: #fff;
-  }
-  
-  .tag.gluten-free {
-    background-color: #6a994e;
-  }
-  
-  .tag.vegan {
-    background-color: #55a630;
-  }
-  
+}
