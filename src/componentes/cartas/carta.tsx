@@ -38,27 +38,39 @@ export default function Carta() {
           <h1 className="titulo">¡Hamburgesas estrella de nuestra carta!</h1>
         </div>
         
-        <div ref={cardContainerRef} className={`card-container ${cardContainerInView ? "visible" : "hidden"}`}>
-          {["burger pollo.jpg", "BurgerDoble.jpg", "BurgerDoble.jpg", "BurgerDoble.jpg"].map((src, index) => (
-            <div
-              key={index}
-              className="card"
-              ref={(el) => {
-                if (el) cardsRef.current[index] = el;
-              }}
-            >
-              <div className={`card${index + 1}`}>
-                <img src={`/assets/${src}`} className={`burger${index + 1}`} alt={`Burger ${index + 1}`} />
+          <div ref={cardContainerRef} className={`card-container ${cardContainerInView ? "visible" : "hidden"}`}>
+          {[
+            { src: "burger pollo.jpg", title: "S+ Pollo", backText: "Ingredientes: Pollo, lechuga, tomate.\nAlérgenos: Gluten, huevo." },
+            { src: "BurgerDoble.jpg", title: "S+ Doble", backText: "Ingredientes: Carne, queso, bacon.\nAlérgenos: Gluten, lácteos." },
+            { src: "BurgerDoble.jpg", title: "S+ Trufa", backText: "Ingredientes: Carne, queso trufado.\nAlérgenos: Lácteos, gluten." },
+            { src: "BurgerDoble.jpg", title: "S+ Bacon", backText: "Ingredientes: Carne, queso, bacon.\nAlérgenos: Gluten, lácteos." },
+            { src: "smash.jpg", title: "S+ Smash", backText: "Ingredientes: Carne, queso, cebolla.\nAlérgenos: Lácteos, gluten." },
+            { src: "vegana.jpg", title: "S+ Vegana", backText: "Ingredientes: Hamburguesa vegetal, lechuga, tomate.\nAlérgenos: Ninguno." },
+          ].map((card, index) => (
+          <div
+            key={index}
+            className="card"
+            ref={(el) => {
+              if (el) cardsRef.current[index] = el;
+            }}
+          >
+            <div className="card-inner">
+              {/* Front of the card */}
+              <div className="card-front">
+                <img src={`/assets/${card.src}`} alt={card.title} />
+                <p className="burger-text">{card.title}</p>
               </div>
-              <p className="burger-text">
-                {index === 0 && "S+ Pollo"}
-                {index === 1 && "S+ Doble"}
-                {index === 2 && "S+ Trufa"}
-                {index === 3 && "S+ Bacon"}
-              </p>
-            </div>
-          ))}
+              {/* Back of the card */}
+              <div className="card-back">
+                <div className="icon">🍔</div>
+                <p>{card.backText}</p>
+              </div>
         </div>
+      </div>
+    ))}
+  </div>
+
+        
       </div>
     </div>
   );

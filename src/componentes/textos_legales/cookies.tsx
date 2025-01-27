@@ -1,5 +1,5 @@
 import React from "react";
-import "./textos_legales.css";
+import "./LegalNotice.css";
 import { FiArrowLeft } from "react-icons/fi"; // Icono de "volver atrás"
 
 

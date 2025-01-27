@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./LegalNotice.css";
 import { FiArrowLeft } from "react-icons/fi"; // Icono de "volver atrás"
 
 
 const LegalNotice: React.FC = () => {
   const handleGoBack = () => {
-    window.history.back(); // Regresa a la página anterior
+    window.location.href = "/";
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    }, 100);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div style={{ padding: "20px", fontFamily: "Montserrat, sans-serif" }}>
       <p className="titulo">POLÍTICA DE PROTECCIÓN DE DATOS DE USUARIOS WEB</p>

@@ -2,7 +2,7 @@
 .titulo {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #cc0033;
   margin-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
@@ -12,10 +12,10 @@
 .subtitulos {
   font-size: 18px;
   font-weight: 600;
-  color: #555;
+  color: #cc0033;
   margin-bottom: 8px;
   text-transform: capitalize;
-  border-bottom: 2px solid #c1ff72;
+  border-bottom: 2px solid #b51739;
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -24,7 +24,7 @@
 .texto {
   font-size: 16px;
   line-height: 1.6;
-  color: #666;
+  color: #ffffff;
   margin-bottom: 15px;
   text-align: justify;
 }
@@ -36,8 +36,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c1ff72;
-  color: #333;
+  background-color: #4ae8c6;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   padding: 10px 15px;
@@ -51,7 +51,7 @@
 
 /* Efecto hover */
 .go-back-btn:hover {
-  background-color: #a4db61;
+  background-color: #b51739;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
