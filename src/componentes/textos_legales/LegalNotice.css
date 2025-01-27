@@ -1,56 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
-
-body {
-    background-image: url(/assets/fondo.png);
+/* Estilo para el título principal */
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.legal-notice-container {
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+/* Estilo para los subtítulos */
+.subtitulos {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #c1ff72;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Estilo para el texto */
+.texto {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+/* Estilo del botón para volver */
+.go-back-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1ff72;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Efecto hover */
+.go-back-btn:hover {
+  background-color: #a4db61;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .go-back-btn {
+    font-size: 14px;
+    padding: 8px 12px;
   }
-  
-  .legal-notice-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .go-back-btn {
+    font-size: 12px;
+    padding: 6px 10px;
   }
-  
-  .legal-notice-image {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+}
+
+/* Ajustes responsive */
+@media (max-width: 1200px) {
+  .titulo {
+    font-size: 22px;
   }
-  
-  .legal-notice-title {
-    color: #b51739;
-    font-size: 2rem;
-    margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
+  .subtitulos {
+    font-size: 16px;
   }
-  
-  .legal-notice-subtitle {
-    color: #b51739; 
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  .texto {
+    font-size: 15px;
   }
-  
-  .legal-notice-text {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 20px;
   }
-  
-  .legal-notice-list {
-    list-style-type: disc;
-    margin-left: 20px;
+  .subtitulos {
+    font-size: 15px;
   }
-  
-  .legal-notice-list li {
-    margin-bottom: 10px;
+  .texto {
+    font-size: 14px;
   }
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 18px;
+  }
+  .subtitulos {
+    font-size: 14px;
+  }
+  .texto {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo {
+    font-size: 16px;
+  }
+  .subtitulos {
+    font-size: 12px;
+    border-bottom: 1px solid #c1ff72;
+  }
+  .texto {
+    font-size: 12px;
+  }
+}

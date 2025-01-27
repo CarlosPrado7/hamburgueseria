@@ -7,6 +7,7 @@ import Header from './componentes/header/header.tsx';
 import Carta from './componentes/cartas/carta.tsx';
 import Footer from './componentes/footer/footer.tsx';
 import AvisoLegal from './componentes/textos_legales/LegalNotice.tsx';
+import Cookies from './componentes/textos_legales/cookies.tsx';
 import Horario_Ubicacion from './componentes/horario_ubicacion/horario_ubicacion.tsx';
 import Menu from './componentes/menu/menu.tsx';
 import CartaBurger from './componentes/cartaBurger/cartaBurger.tsx';
@@ -57,6 +58,8 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           {/* Aviso Legal */}
           <Route path="/legal-notice" element={<AvisoLegal />} />
+          {/* Cookies */}
+          <Route path="/cookies" element={<Cookies />} />
           {/* Carta */}
           <Route path="/cartaBurger" element={<CartaBurger />} />
         </Routes>
