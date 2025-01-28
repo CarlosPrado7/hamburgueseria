@@ -46,7 +46,9 @@ export default function CookieBanner() {
                 <span className="icono">🍔</span>
             </p>
             <p className="texto">
-                Usamos cookies para mejorar la experiencia de usuario. ¿Aceptas el uso de cookies?
+                Queremos ofrecerte la mejor experiencia. Usamos cookies para analizar el tráfico, 
+                guardar tus preferencias y personalizar el contenido. Puedes aceptar o rechazar las cookies. 
+                Consulta nuestra <a href="/cookies" className="link">Política de Cookies</a> para más información.
             </p>
             <div className="cookie-button">
                 <button className="aceptar" onClick={aceptarCookies}>Aceptar</button>

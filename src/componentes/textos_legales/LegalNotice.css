@@ -1,34 +1,32 @@
-/* Estilo para el título principal */
 .titulo {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
-  color: #cc0033;
-  margin-bottom: 10px;
+  color: #e63946; 
+  margin-bottom: 1rem;
   text-transform: uppercase;
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
-/* Estilo para los subtítulos */
 .subtitulos {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #cc0033;
-  margin-bottom: 8px;
+  color: #e63946;
+  margin-bottom: 0.5rem;
   text-transform: capitalize;
   border-bottom: 2px solid #b51739;
   display: inline-block;
-  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
 }
 
-/* Estilo para el texto */
 .texto {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ffffff;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f1faee;
+  margin-bottom: 1.5rem;
   text-align: justify;
 }
-/* Estilo del botón para volver */
+
 .go-back-btn {
   position: fixed;
   bottom: 20px;
@@ -36,11 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4ae8c6;
-  color: #ffffff;
-  font-size: 16px;
+  background-color: #1d3557; 
+  color: #f1faee; 
+  font-size: 1rem;
   font-weight: bold;
-  padding: 10px 15px;
+  padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -49,73 +47,56 @@
   text-decoration: none;
 }
 
-/* Efecto hover */
 .go-back-btn:hover {
-  background-color: #b51739;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Ajustes responsive */
-@media (max-width: 768px) {
-  .go-back-btn {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-}
-
-@media (max-width: 576px) {
-  .go-back-btn {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-}
-
-/* Ajustes responsive */
-@media (max-width: 1200px) {
-  .titulo {
-    font-size: 22px;
-  }
-  .subtitulos {
-    font-size: 16px;
-  }
-  .texto {
-    font-size: 15px;
-  }
+  background-color: #e63946; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 992px) {
   .titulo {
-    font-size: 20px;
+    font-size: 1.8rem;
   }
   .subtitulos {
-    font-size: 15px;
+    font-size: 1.4rem;
   }
   .texto {
-    font-size: 14px;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 768px) {
   .titulo {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
   .subtitulos {
-    font-size: 14px;
+    font-size: 1.2rem;
   }
   .texto {
-    font-size: 13px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .go-back-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 }
 
 @media (max-width: 576px) {
   .titulo {
-    font-size: 16px;
+    font-size: 1.3rem;
   }
   .subtitulos {
-    font-size: 12px;
-    border-bottom: 1px solid #c1ff72;
+    font-size: 1rem;
+    border-bottom: 1px solid #e63946;
   }
   .texto {
-    font-size: 12px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .go-back-btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    bottom: 15px;
+    right: 15px;
   }
 }
