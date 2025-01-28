@@ -12,7 +12,7 @@ import Horario_Ubicacion from './componentes/horario_ubicacion/horario_ubicacion
 import Menu from './componentes/menu/menu.tsx';
 import CartaBurger from './componentes/cartaBurger/cartaBurger.tsx';
 import SobreNosotros from './componentes/sobreNosotros/sobreNosotros.tsx';
-import CookieBanner from './cookieBanner/cookieBanner.tsx';
+import CookieBanner from './componentes/cookieBanner/cookieBanner.tsx';
 
 const Preloader: React.FC = () => {
   return (
