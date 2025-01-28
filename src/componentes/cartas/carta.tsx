@@ -55,12 +55,12 @@ export default function Carta() {
             }}
           >
             <div className="card-inner">
-              {/* Front of the card */}
+              {/* Carta por delante */}
               <div className="card-front">
                 <img src={`/assets/${card.src}`} alt={card.title} />
                 <p className="burger-text">{card.title}</p>
               </div>
-              {/* Back of the card */}
+              {/* Carta por detrás */}
               <div className="card-back">
                 <div className="icon">🍔</div>
                 <p>{card.backText}</p>
