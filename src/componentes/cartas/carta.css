@@ -1,6 +1,8 @@
 .section-container {
   text-align: center;
   background-image: url("/assets/fondo.png");
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,7 +15,7 @@
 }
 
 .section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -40,6 +42,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
+  margin-bottom: 50px;
 }
 
 .card-container.visible {
@@ -87,15 +90,41 @@
 }
 
 .card-front {
-  background-color: #fff;
+  background: linear-gradient(135deg, #b51739, #ff2e63);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(0deg);
+  border-radius: 15px;
+  padding: 10px;
+  border: 3px solid #ff2e63;
+  box-shadow: 0 0 15px rgba(255, 46, 99, 0.6);
+  position: relative;
+}
+
+.card-front:hover {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes glowing-dashed {
+  0% { border-color: #000000; box-shadow: 0 0 5px #000000; }
+  50% { border-color: #000000; box-shadow: 0 0 20px #000000; }
+  100% { border-color: #000000; box-shadow: 0 0 5px #000000; }
 }
 
 .card-front img {
-  width: 80%;
-  height: auto;
-  margin-bottom: 0.5rem;
-  aspect-ratio: 1/1;
+  width: 100%;
+  height: 70%;
   object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  border: 3px solid #000000;
+  animation: glowing-dashed 1.5s infinite alternate;
+}
+
+.card-front:hover img {
+  transform: scale(1.1) rotate(-3deg);
 }
 
 .card-back {
@@ -115,11 +144,12 @@
 .burger-text {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #b51739;
+  color: #ffffff;
   text-align: center;
   margin-top: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .card-back p {
@@ -128,25 +158,73 @@
   font-size: 0.9rem;
 }
 
-/* Responsive styles */
+.allergens {
+  margin-top: 10px;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.allergens strong {
+  color: #ffcc00;
+}
+
+.allergens ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.allergens li {
+  font-size: 0.9rem;
+  color: #ffcc00;
+}
+
+/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
+  .section-container {
+    padding: 1rem;
+  }
+
   .card-container {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cartas por fila */
+    gap: 1rem;
   }
 
   .card {
-    width: 160px;
-    height: 220px;
+    width: 100%;
+    height: auto; /* La altura se ajustará de acuerdo con el contenido */
+    max-width: 100%;
+  }
+
+  .card-inner {
+    flex-direction: column; /* Hacemos que las cartas se apilen verticalmente */
+  }
+
+  .card-front img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    height: auto;
+  }
+
+  .card-back {
+    padding: 1rem;
   }
 }
 
+/* Media Query para pantallas muy pequeñas (móviles en modo vertical) */
 @media (max-width: 480px) {
   .card-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 carta por fila */
   }
 
   .card {
-    width: 140px;
-    height: 190px;
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title h1 {
+    font-size: 1.5rem; /* Reducir tamaño de fuente en móviles */
   }
 }
+
