@@ -193,40 +193,60 @@
   color: #ffcc00;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    gap: 3rem;
   }
 
   .card {
-    width: 100%;
-    height: auto;
+    width: 250px; /* Ajustamos el tamaño de las cartas */
+    height: 300px;
   }
 
-  .card-inner {
-    flex-direction: column; 
+  .burger-text {
+    font-size: 1rem;
   }
 
   .card-front img {
-    width: 100%; 
-    height: auto;
-  }
-
-  .card-back {
-    padding: 1rem;
+    height: 60%; /* Ajustamos el tamaño de la imagen */
   }
 }
 
-@media (max-width: 480px) {
+/* Para pantallas móviles más pequeñas */
+@media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 2rem;
   }
 
   .card {
+    width: 100%; /* Las cartas toman el 100% del ancho */
+    height: 300px; /* Ajustamos la altura */
+  }
+
+  .burger-text {
+    font-size: 0.9rem; /* Reducimos el tamaño del texto */
+  }
+
+  .card-front img {
+    height: 50%; /* Ajustamos la imagen */
+  }
+}
+
+/* Para pantallas muy pequeñas (móviles con pantallas más pequeñas) */
+@media (max-width: 480px) {
+  .card {
     width: 100%;
-    height: auto;
+    height: 250px; /* Ajustamos la altura aún más */
+  }
+
+  .burger-text {
+    font-size: 0.85rem; /* Reducimos el tamaño del texto aún más */
+  }
+
+  .card-front img {
+    height: 50%;
   }
 }
 
