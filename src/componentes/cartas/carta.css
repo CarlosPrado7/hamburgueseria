@@ -1,6 +1,6 @@
 .section-container {
   text-align: center;
-  background-image: url(/assets/fondoMasLlamativo.png);
+  background-image: url("/assets/fondo.png");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,8 +48,8 @@
 }
 
 .card {
-  width: 200px;
-  height: 270px;
+  width: 280px;
+  height: 350px;
   perspective: 1000px;
   margin: auto;
   position: relative;
