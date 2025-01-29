@@ -11,7 +11,7 @@ export default function Carta() {
 
   const { ref: cardContainerRef, inView: cardContainerInView } = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.1,
   });
 
   const cardsRef = useRef<HTMLDivElement[]>([]);

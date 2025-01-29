@@ -194,10 +194,6 @@
 }
 
 @media (max-width: 768px) {
-  .section-container {
-    padding: 1rem;
-  }
-
   .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -207,7 +203,6 @@
   .card {
     width: 100%;
     height: auto;
-    max-width: 100%;
   }
 
   .card-inner {
@@ -232,10 +227,6 @@
   .card {
     width: 100%;
     height: auto;
-  }
-
-  .section-title h1 {
-    font-size: 1.5rem; 
   }
 }
 
