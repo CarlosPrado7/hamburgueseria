@@ -43,8 +43,11 @@
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
   margin-bottom: 50px;
-  opacity: 1;
-  visibility: visible;
+}
+
+.card-container.hidden {
+  opacity: 0;
+  visibility: hidden; 
 }
 
 .card-container.visible {
@@ -57,8 +60,15 @@
   height: 350px;
   perspective: 1000px;
   opacity: 0;
+  visibility: hidden;
   margin: auto;
   position: relative;
+}
+
+.card.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .card-inner {
