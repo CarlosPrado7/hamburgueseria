@@ -34,6 +34,7 @@ export default function CartaBurger() {
       <h1 className="hamburguesas-title">Nuestras Hamburguesas</h1>
       <div className="hamburguesas">
         <div className="hamburguesa">
+          <img src="/assets/S+ burger.jpeg" alt="" />
           <h2 className="nombre">S+ Basic</h2>
           <p className="descripcion">Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, una smash burger</p>
           <p className="precio">Precio: 6,99€ Menú: 9,49€</p>
@@ -45,11 +46,13 @@ export default function CartaBurger() {
           <p className="precio">Precio: 8,99€ Menú: 11,49€</p>
         </div>
         <div className="hamburguesa">
+          <img src="/assets/burgerBacon.jpg" alt="Burger Bacon" />
           <h2 className="nombre">S+ Bacon</h2>
           <p className="descripcion">Pan de patata bañado en mantequilla y tostado, cebolla agridulce, mermelada de bacon, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa de bacon ahumado</p>
           <p className="precio">Precio: 9,99€ Menú: 12,49€</p>
         </div>
         <div className="hamburguesa">
+          <img src="/assets/burgerTrufa.jpg" alt="Burger Trufa" />
           <h2 className="nombre">S+ Trufada</h2>
           <p className="descripcion">Pan de patata bañado en mantequilla y tostado, cebolla confitada, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa trufada casera</p>
           <p className="precio">Precio: 10,99€ Menú: 13,49€</p>
@@ -61,11 +64,13 @@ export default function CartaBurger() {
           <p className="precio">Precio: 9,99€ Menú: 12,49€</p>
         </div>
         <div className="hamburguesa">
+          <img src="/assets/junior.png" alt="Junior" />
           <h2 className="nombre">S+ Junior</h2>
           <p className="descripcion">Pan slider bañado en mantequilla y tostado, una smash burger, ketchup</p>
           <p className="precio">Precio: 4,99€ Menú: 6,99€</p>
         </div>
         <div className="hamburguesa">
+          <img src="/assets/vegana.png" alt="Vegana" />
           <h2 className="nombre">S+ Vegetariana</h2>
           <p className="descripcion">Pan de patata tostado, carne vegetariana, bacon vegetariano, ketchup</p>
           <p className="precio">Precio: 9,99€ Menú: 12,49€</p>
@@ -85,26 +90,31 @@ export default function CartaBurger() {
       <h1 className="entrantes-title">Nuestros Entrantes</h1>
       <div className="entrantes">
         <div className="entrante">
+          <img src="/assets/patatas.jpg" alt="Patatas" />
           <h2 className="nombre">S+ Fries</h2>
           <p className="descripcion">Patatas caseras sazonadas</p>
           <p className="precio">Precio: 3,50€</p>
         </div>
         <div className="entrante">
+          <img src="/assets/baconPatatas.png" alt="Bacon Fries" />
           <h2 className="nombre">S+ Bacon Fries</h2>
           <p className="descripcion">Patatas caseras, bacon, queso americano fundido</p>
           <p className="precio">Precio: 5,99€</p>
         </div>
         <div className="entrante">
+          <img src="/assets/florCebolla.png" alt="Flor Cebolla" />
           <h2 className="nombre">Flor de cebolla</h2>
           <p className="descripcion">Flor de cebolla frita y salsa S+ casera</p>
           <p className="precio">Precio: 5,99€</p>
         </div>
         <div className="entrante">
+          <img src="/assets/finger.jpeg" alt="Finger Pollo" />
           <h2 className="nombre">S+ Finger de Pollo</h2>
           <p className="descripcion">Tiras de pollo crujiente y salsa S+ casera</p>
           <p className="precio">Precio: 6,99€ Menú: 9,49€</p>
         </div>
         <div className="entrante">
+          <img src="/assets/alitas.jpeg" alt="Alitas" />
           <h2 className="nombre">S+ Alitas Teriyaki</h2>
           <p className="descripcion">Alitas de pollo crujiente y salsa teriyaki casera</p>
           <p className="precio">Precio: 5,99€ Menú: 10,49€</p>
@@ -152,16 +162,19 @@ export default function CartaBurger() {
       <h1 className="postes-title">Nuestros Postres</h1>
       <div className="postres">
         <div className="postre">
+          <img src="/assets/cookie.jpeg" alt="Cookie" />
           <h2 className="nombre">S+ Cookie</h2>
           <p className="descripcion">Cookies caseras de chocolate con toppings de sabores</p>
           <p className="precio">Precio: 3,50€</p>
         </div>
         <div className="postre">
+          <img src="/assets/tartaQueso.jpg" alt="Tarta Queso" />
           <h2 className="nombre">S+ CheeseCake</h2>
           <p className="descripcion">Tarta suave de queso manchego</p>
           <p className="precio">Precio: 3,99€</p>
         </div>
         <div className="postre">
+          <img src="/assets/sandwich.png" alt="Sandwich" />
           <h2 className="nombre">S+ Sandwich</h2>
           <p className="descripcion">Pan slicer bañado en mantequilla y tostado con nutella y crujiente de galleta</p>
           <p className="precio">Precio: 3,50€</p>

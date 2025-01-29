@@ -46,11 +46,36 @@ export default function Carta() {
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, contramuslo de pollo crujiente, pepinillo, cebolla agridulce, salsa S+ casera.",
           allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"]
         },
-        { src: "BurgerDoble.jpg", title: "S+ Doble", backText: "Ingredientes: Carne, queso, bacon.", allergens: ["🌾 Gluten", "🥛 Lácteos"] },
-        { src: "BurgerDoble.jpg", title: "S+ Trufa", backText: "Ingredientes: Carne, queso trufado.", allergens: ["🥛 Lácteos", "🌾 Gluten"] },
-        { src: "BurgerDoble.jpg", title: "S+ Bacon", backText: "Ingredientes: Carne, queso, bacon.", allergens: ["🌾 Gluten", "🥛 Lácteos"] },
-        { src: "smash.jpg", title: "S+ Smash", backText: "Ingredientes: Carne, queso, cebolla.", allergens: ["🥛 Lácteos", "🌾 Gluten"] },
-        { src: "vegana.jpg", title: "S+ Vegana", backText: "Ingredientes: Hamburguesa vegetal, lechuga, tomate.", allergens: [] }
+        { 
+          src: "BurgerDoble.jpg", 
+          title: "S+ Doble", 
+          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, doble smash burger, dos lonchas de queso americano, salsa S+ casera",
+          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+        },
+        { 
+          src: "burgerTrufa.jpg", 
+          title: "S+ Trufa", 
+          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla confitada, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa trufada casera", 
+          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+        },
+        { 
+          src: "burgerBacon.jpg", 
+          title: "S+ Bacon", 
+          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla agridulce, mermelada de bacon, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa de bacon ahumado casera", 
+          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+        },
+        { 
+          src: "smash.jpg", 
+          title: "S+ Smash", 
+          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, una smash burger, una loncha de queso americano, salsa S+ caera", 
+          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+        },
+        { 
+          src: "vegana.jpg", 
+          title: "S+ Vegana", 
+          backText: "Ingredientes: Pan de patata tostado, carne vegetariana, bacon vegetariano, ketchup", 
+          allergens: ["🥛 Lácteos","🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+        }
       ].map((card, index) => (
         <div
           key={index}
