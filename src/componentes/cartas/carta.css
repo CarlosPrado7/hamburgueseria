@@ -43,6 +43,8 @@
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
   margin-bottom: 50px;
+  opacity: 1;
+  visibility: visible;
 }
 
 .card-container.visible {
@@ -54,6 +56,7 @@
   width: 280px;
   height: 350px;
   perspective: 1000px;
+  opacity: 0;
   margin: auto;
   position: relative;
 }
@@ -180,7 +183,6 @@
   color: #ffcc00;
 }
 
-/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
   .section-container {
     padding: 1rem;
@@ -188,22 +190,22 @@
 
   .card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 cartas por fila */
+    grid-template-columns: 1fr 1fr; 
     gap: 1rem;
   }
 
   .card {
     width: 100%;
-    height: auto; /* La altura se ajustará de acuerdo con el contenido */
+    height: auto;
     max-width: 100%;
   }
 
   .card-inner {
-    flex-direction: column; /* Hacemos que las cartas se apilen verticalmente */
+    flex-direction: column; 
   }
 
   .card-front img {
-    width: 100%; /* La imagen ocupa todo el ancho */
+    width: 100%; 
     height: auto;
   }
 
@@ -212,10 +214,9 @@
   }
 }
 
-/* Media Query para pantallas muy pequeñas (móviles en modo vertical) */
 @media (max-width: 480px) {
   .card-container {
-    grid-template-columns: 1fr; /* 1 carta por fila */
+    grid-template-columns: 1fr; 
   }
 
   .card {
@@ -224,7 +225,7 @@
   }
 
   .section-title h1 {
-    font-size: 1.5rem; /* Reducir tamaño de fuente en móviles */
+    font-size: 1.5rem; 
   }
 }
 
