@@ -65,13 +65,13 @@ export default function Carta() {
           allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
         },
         { 
-          src: "smash.jpg", 
+          src: "S+ burger.jpeg", 
           title: "S+ Smash", 
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, una smash burger, una loncha de queso americano, salsa S+ caera", 
           allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
         },
         { 
-          src: "vegana.jpg", 
+          src: "vegana.png", 
           title: "S+ Vegana", 
           backText: "Ingredientes: Pan de patata tostado, carne vegetariana, bacon vegetariano, ketchup", 
           allergens: ["🥛 Lácteos","🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 

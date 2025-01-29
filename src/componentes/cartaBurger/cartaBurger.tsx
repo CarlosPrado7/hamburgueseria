@@ -174,7 +174,7 @@ export default function CartaBurger() {
           <p className="precio">Precio: 3,99€</p>
         </div>
         <div className="postre">
-          <img src="/assets/sandwich.png" alt="Sandwich" />
+          <img src="/assets/sandwich.png" alt="Sandwich " />
           <h2 className="nombre">S+ Sandwich</h2>
           <p className="descripcion">Pan slicer bañado en mantequilla y tostado con nutella y crujiente de galleta</p>
           <p className="precio">Precio: 3,50€</p>
