@@ -217,7 +217,7 @@
 @media (max-width: 768px) {
   .card-container {
     grid-template-columns: 1fr; /* Una sola columna */
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .card {
