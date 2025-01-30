@@ -18,7 +18,7 @@ const Preloader: React.FC = () => {
   return (
     <div className="preloader">
       <video className="preloader-video" autoPlay loop muted>
-        <source src="/assets/preloaderVideoMenos.mp4" type="video/mp4" />
+        <source src="/assets/preloaderVideo.mp4" type="video/mp4" />
       </video>
       <div className="preloader-overlay"></div>
       <div className="logo-container">
@@ -49,7 +49,7 @@ const App: React.FC = () => {
     // Simulate loading time of at least 2 seconds
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 5000);
 
     return () => clearTimeout(timeout);
   }, []);
