@@ -17,9 +17,9 @@ import CookieBanner from './componentes/cookieBanner/cookieBanner.tsx';
 const Preloader: React.FC = () => {
   return (
     <div className="preloader">
-      <video className="preloader-video" autoPlay loop muted>
-        <source src="/assets/preloaderVideo.mp4" type="video/mp4" />
-      </video>
+
+      <img src="/assets/preloaderVideo.gif" className="preloader-video" />
+
       <div className="preloader-overlay"></div>
       <div className="logo-container">
         <img src="/assets/s+_icono-obsidiana.png" alt="Logo" className="logo_preloader" />
