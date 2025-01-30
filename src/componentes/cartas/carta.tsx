@@ -58,7 +58,7 @@ export default function Carta() {
           title: "S+ Bacon", 
         },
         { 
-          src: "S+ burger.jpeg", 
+          src: "burgerSmash.jpeg", 
           title: "S+ Smash", 
         },
         { 
