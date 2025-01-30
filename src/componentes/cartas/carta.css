@@ -226,6 +226,7 @@
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
+    width: 70%;
   }
 
   .card-back {
@@ -235,9 +236,10 @@
     text-align: center;
   }
 
-  .card {
-    width: 90%;
-    height: 300px;
+  .card-front img{
+    width: 60%;
+    object-fit: cover;
+    background-position: center;
   }
 
 }
