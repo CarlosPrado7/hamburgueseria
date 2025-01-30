@@ -206,18 +206,11 @@
     gap: 3rem;
   }
 
-  .card {
-    width: 250px;
-    height: 300px;
-  }
 
   .burger-text {
     font-size: 1rem;
   }
 
-  .card-front img {
-    height: 60%;
-  }
 }
 
 /* Movil Grande*/
@@ -226,7 +219,6 @@
   .card-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
-    width: 70%;
   }
 
   .card-back {
@@ -236,27 +228,17 @@
     text-align: center;
   }
 
-  .card-front img{
-    width: 60%;
-    object-fit: cover;
-    background-position: center;
-  }
-
 }
 
 /* Movil Estandar */
 @media (max-width: 480px) {
   .card {
     width: 100%;
-    height: 250px; 
   }
 
   .burger-text {
     font-size: 0.6rem;
   }
 
-  .card-front img {
-    height: 50%;
-  }
 }
 
