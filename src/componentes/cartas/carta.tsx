@@ -1,6 +1,7 @@
 import './carta.css';
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Carta() { 
 
@@ -44,37 +45,37 @@ export default function Carta() {
           src: "burger pollo.jpg",
           title: "S+ Chicken",
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, contramuslo de pollo crujiente, pepinillo, cebolla agridulce, salsa S+ casera.",
-          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"]
+          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"]
         },
         { 
           src: "BurgerDoble.jpg", 
           title: "S+ Doble", 
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, doble smash burger, dos lonchas de queso americano, salsa S+ casera",
-          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "burgerTrufa.jpg", 
           title: "S+ Trufa", 
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla confitada, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa trufada casera", 
-          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "burgerBacon.jpg", 
           title: "S+ Bacon", 
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla agridulce, mermelada de bacon, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa de bacon ahumado casera", 
-          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "S+ burger.jpeg", 
           title: "S+ Smash", 
           backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, una smash burger, una loncha de queso americano, salsa S+ caera", 
-          allergens: ["🥛 Lácteos", "🌾 Gluten", "🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "vegana.png", 
           title: "S+ Vegana", 
           backText: "Ingredientes: Pan de patata tostado, carne vegetariana, bacon vegetariano, ketchup", 
-          allergens: ["🥛 Lácteos","🥚 Huevo", "🌭 Mostaza", "🌱 Soja", "🌻 Frutos de cáscara"] 
+          allergens: ["🥛","🥚", "🌭", "🌱", "🌻"] 
         }
       ].map((card, index) => (
         <div
@@ -92,18 +93,10 @@ export default function Carta() {
             </div>
             {/* Carta por detrás */}
             <div className="card-back">
-              <div className="icon">🍔</div>
-              <p>{card.backText}</p>
-              {card.allergens && card.allergens.length > 0 && (
-                <div className="allergens">
-                  <strong>Alérgenos:</strong>
-                  <ul>
-                    {card.allergens.map((allergen, i) => (
-                      <li key={i}>{allergen}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+            <div className="icon">🍔</div>
+            <Link to="/cartaBurger" className="view-menu-button">
+              VER CARTA
+            </Link>
             </div>
           </div>
         </div>
