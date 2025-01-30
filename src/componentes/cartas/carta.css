@@ -189,11 +189,11 @@
 }
 
 .burger-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -205,12 +205,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
-
-
-  .burger-text {
-    font-size: 1rem;
-  }
-
 }
 
 /* Movil Grande*/
@@ -227,7 +221,6 @@
     align-items: center;
     text-align: center;
   }
-
 }
 
 /* Movil Estandar */
@@ -235,10 +228,5 @@
   .card {
     width: 100%;
   }
-
-  .burger-text {
-    font-size: 0.6rem;
-  }
-
 }
 
