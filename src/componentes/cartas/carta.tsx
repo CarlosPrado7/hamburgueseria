@@ -44,38 +44,26 @@ export default function Carta() {
         {
           src: "burger pollo.jpg",
           title: "S+ Chicken",
-          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, contramuslo de pollo crujiente, pepinillo, cebolla agridulce, salsa S+ casera.",
-          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"]
         },
         { 
           src: "BurgerDoble.jpg", 
           title: "S+ Doble", 
-          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, doble smash burger, dos lonchas de queso americano, salsa S+ casera",
-          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "burgerTrufa.jpg", 
           title: "S+ Trufa", 
-          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla confitada, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa trufada casera", 
-          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "burgerBacon.jpg", 
           title: "S+ Bacon", 
-          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla agridulce, mermelada de bacon, bacon crujiente, doble smash burger, dos lonchas de queso americano, salsa de bacon ahumado casera", 
-          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "S+ burger.jpeg", 
           title: "S+ Smash", 
-          backText: "Ingredientes: Pan de patata bañado en mantequilla y tostado, cebolla cruda, pepinillo, una smash burger, una loncha de queso americano, salsa S+ caera", 
-          allergens: ["🥛", "🌾", "🥚", "🌭", "🌱", "🌻"] 
         },
         { 
           src: "vegana.png", 
           title: "S+ Vegana", 
-          backText: "Ingredientes: Pan de patata tostado, carne vegetariana, bacon vegetariano, ketchup", 
-          allergens: ["🥛","🥚", "🌭", "🌱", "🌻"] 
         }
       ].map((card, index) => (
         <div
