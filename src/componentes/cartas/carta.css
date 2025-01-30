@@ -235,6 +235,11 @@
     text-align: center;
   }
 
+  .card {
+    width: 250px;
+    height: 300px;
+  }
+
 }
 
 /* Movil Estandar */
