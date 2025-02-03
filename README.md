@@ -87,5 +87,8 @@ npm uninstall @vercel/analytics
   ### Almacenamiento de Aceptación: Una vez aceptado el banner, no vuelve a aparecer. ###
   ### Cookies de Ubicación: Se guardan las cookies relacionadas con la ubicación del usuario. ###
 
-  ## Despliegue ##
-  ### Para desplegar este proyecto en producción, puedes usar plataformas como Vercel o Netlify. Solo es necesario conectar el repositorio a estas plataformas y seguir las instrucciones. ###
+  ## Enlace de Despliegue
+
+  El proyecto está desplegado en **Vercel** y puede accederse a través del siguiente enlace:
+
+  [Visitar la hamburguesería](https://hamburgueseria-omega.vercel.app)
