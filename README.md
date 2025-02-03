@@ -1,101 +1,104 @@
-# React + TypeScript + Vite
+# Hamburguesería
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una página web creada para una hamburguesería utilizando **React**, **TypeScript** y **Vite**. La aplicación tiene varias funcionalidades, incluyendo navegación, efectos de scroll suave y un diseño responsivo, todo desarrollado con herramientas modernas para ofrecer una excelente experiencia al usuario.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario interactivas.
+- **TypeScript**: Superset de JavaScript que permite trabajar con tipado estático.
+- **Vite**: Herramienta de construcción rápida para proyectos de frontend.
+- **CSS**: Para los estilos visuales de la página.
+- **React Router**: Para gestionar la navegación entre las diferentes secciones de la página.
+- **React Scroll**: Para implementar scroll suave entre secciones.
+- **React Intersection Observer**: Para detectar cuando los elementos entran en la vista del usuario.
+- **Vercel Analytics**: Para obtener información sobre el tráfico web (desinstalado si no es necesario).
 
-## Expanding the ESLint configuration
+## Comandos usados
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. **Crear el proyecto con Vite y React**
 
-- Configure the top-level `parserOptions` property like this:
+Para iniciar un nuevo proyecto con Vite, React y TypeScript:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+```bash
+npm create vite@latest hamburgueseria
+cd hamburgueseria
+2. Instalar dependencias iniciales
+Una vez dentro del directorio del proyecto, instala las dependencias necesarias para correr el proyecto:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-
-# hamburgueseria
-
-# Comandos usados  
-npm create vite@latest hamburgueseria  
-cd hamburgueseria  
-npm install  
+bash
+Copiar
+Editar
+npm install
 npm run dev
+3. Instalar librerías necesarias
+A continuación, instala las librerías adicionales que se utilizan en el proyecto:
 
-# Librerias necesarias
+React Router Dom: Para navegar entre las páginas.
+
+bash
+Copiar
+Editar
 npm install react-router-dom
-npm install react-scroll
-npm install --save-dev @types/react-scroll
-npm install react-intersection-observer
-npm i @vercel/analytics
-npm uninstall @vercel/analytics
+React Scroll: Para implementar el scroll suave.
 
-# Funcionalidades 
-- [] General
-    - [] Fuentes 
-    - [] Colores negros, blancos y #b51739
-    - [X] Logos definitivos
-    - [] Contacto definitivo
-    - [] Añadir analiticas de vercel
-    - [X] Desplegar pagina
-- [X] Preloader
-    - [X] Preloader carga todo
-    - [X] Logo definitivo
-- [] Header
-    - [X] Logo redirige hacia arriba
-    - [] Secciones redirigen a sus secciones
-    - [X] Al hacer scrolldown se mantenga el header
-    - [X] Al hacer hover en el enlace se pone el rojo y subrallado
-    - [X] En version movil se ve el menu hamburguesa
-    - [X] Movil se redirige y cierra el menu
-- [] Footer
-    - [] Logo
-    - [] Contacto
-    - [] Politicas
-    - [] Redirigir a google maps, numero y correo
-    - [] Redireccion a otra pagina para politicas
-    - [] Redireccion de redes sociales
-- [] Textos legales
-    - [] Aviso legal
-    - [] Privacidad
-    - [] cookies
--[] Banner de cookies y cookies
-    - [] Aparece el banner nada más entrar a la pagina
-    - [] El banner tiene formato dado
-    - [] Se debe almacenar informacion para que, al darle a aceptar, no vuelva a salir el banner
-    - [] Añadir cookies de ubicacion
-```
+bash
+Copiar
+Editar
+npm install react-scroll
+Tipo de React Scroll para TypeScript:
+
+bash
+Copiar
+Editar
+npm install --save-dev @types/react-scroll
+React Intersection Observer: Para detectar los elementos que entran en la vista del usuario.
+
+bash
+Copiar
+Editar
+npm install react-intersection-observer
+Vercel Analytics (Si se desea agregar análisis de tráfico web):
+
+bash
+Copiar
+Editar
+npm i @vercel/analytics
+Desinstalar Vercel Analytics (En caso de que no sea necesario):
+
+bash
+Copiar
+Editar
+npm uninstall @vercel/analytics
+Funcionalidades
+General
+Fuentes: Se usan fuentes personalizadas según el diseño de la hamburguesería.
+Colores: Los colores principales incluyen negros, blancos y el color #b51739 para los acentos.
+Logos: Se implementó el logo definitivo en la página.
+Contacto: Se implementó la sección de contacto definitivo.
+Análisis de Vercel: Se añadió la integración de análisis para monitorear el tráfico web.
+Despliegue de la página: La página fue desplegada exitosamente.
+Preloader
+Preloader: Se implementó una pantalla de carga que muestra el logo mientras se carga la página.
+El preloader carga todo el contenido antes de mostrar la interfaz.
+Header
+Logo: El logo redirige a la parte superior de la página al hacer clic.
+Secciones: Al hacer clic en las secciones del header, la página redirige a las correspondientes.
+Sticky Header: El header se mantiene visible al hacer scroll hacia abajo.
+Efectos en el hover: Al hacer hover sobre los enlaces del header, estos se subrayan y se vuelven de color rojo (#b51739).
+Menú móvil: En la versión móvil, el menú se convierte en un menú hamburguesa.
+Al hacer clic en el menú hamburguesa, se abre el menú y se puede redirigir a las secciones.
+Footer
+Logo: El logo en el footer redirige a la página principal.
+Contacto: Información de contacto en el footer, con redirecciones a Google Maps, teléfono y correo.
+Políticas: Se incluye un enlace a la página de políticas.
+Redes sociales: Redirecciones a las redes sociales desde el footer.
+Textos Legales
+Aviso Legal: Se incluye una sección con el aviso legal de la página.
+Política de Privacidad: Incluye el enlace a la política de privacidad.
+Política de Cookies: Se incluye un enlace a la política de cookies.
+Banner de Cookies
+Mostrar Banner de Cookies: El banner de cookies aparece al ingresar al sitio.
+Almacenamiento de Aceptación: Una vez aceptado el banner, no vuelve a aparecer.
+Cookies de Ubicación: Se guardan las cookies relacionadas con la ubicación del usuario.
+Despliegue
+Para desplegar este proyecto en producción, puedes usar plataformas como Vercel o Netlify. Solo es necesario conectar el repositorio a estas plataformas y seguir las instrucciones.
